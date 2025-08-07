@@ -1,0 +1,21 @@
+{
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "typescript.suggest.includeCompletionsForModuleExports": true,
+  "typescript.suggest.includeCompletionsWithSnippetText": true
+}

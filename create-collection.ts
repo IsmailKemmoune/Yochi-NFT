@@ -85,8 +85,12 @@ try {
     }
   }
 
-  console.log(`Collection NFT created: ${getExplorerLink('address', createdCollectionNft.mint.publicKey, "devnet")}`);
-  console.log("Collection NFT details:", createdCollectionNft);
+  if (createdCollectionNft) {
+    console.log(`Collection NFT created: ${getExplorerLink('address', createdCollectionNft.mint.publicKey, "devnet")}`);
+    console.log("Collection NFT details:", createdCollectionNft);
+  } else {
+    console.error("Failed to fetch digital asset after all retries");
+  }
 
 } catch (error) {
   console.error("Error creating collection NFT:", error);
